@@ -1,0 +1,38 @@
+@import './vars';
+@import './mixins';
+@import './libs';
+
+html {
+  height: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $font-size;
+  font-family: $font;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #fff;
+}
+*, *::before, *::after { box-sizing: border-box; };
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.accent {
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: rem(10px);
+    left: 0;
+    width: 100%;
+    height: rem(15px);
+    z-index: -1;
+    background-color: $accent;
+  }
+}
+
+@import './components/intro';
