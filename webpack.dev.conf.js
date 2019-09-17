@@ -7,7 +7,8 @@ module.exports = merge(baseWebpackConfig, {
   devtool: 'cheap-module-eval-source-map',
   devServer: {
     contentBase: baseWebpackConfig.externals.paths.dist,
-    overlay: true
+    overlay: true,
+    compress: true
   },
   plugins: [
     new webpack.SourceMapDevToolPlugin({

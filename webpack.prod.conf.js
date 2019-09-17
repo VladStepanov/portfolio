@@ -2,8 +2,14 @@ const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
 const ImageminPlugin = require('imagemin-webpack-plugin').default
 
+const ASSET_PATH = process.env.ASSET_PATH || '/';
+
+
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
+  // output: {
+    // publicPath: '/portfolio'
+  // }
   // module: {
   //   rules: [
   //     {

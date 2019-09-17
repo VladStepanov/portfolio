@@ -3,8 +3,15 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  z-index: 1;
   &__section {
-    background-color: #1f1f20;
+    position: relative;
+    canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
   &__main {
     font-size: rem(20px)
