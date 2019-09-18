@@ -35,12 +35,16 @@ body {
   }
 }
 section {
+  padding: rem(100px) 0;
   &:nth-child(odd) {
     background-color: #252527;
   }
   &:nth-child(even) {
     background-color: #1f1f20;
   }
+}
+.no-pad {
+  padding: 0;
 }
 .section {
   padding: rem(100px) 0;
@@ -49,6 +53,9 @@ section {
   text-transform: capitalize;
   font-size: rem(36px);
   font-weight: 300;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: rem($gap*3)
 }
 .overflow {
   overflow: hidden;
@@ -63,3 +70,4 @@ body {
 
 @import './components/intro';
 @import './components/about';
+@import './components/skills';

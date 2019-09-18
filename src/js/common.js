@@ -3,7 +3,9 @@ import './svg-sprites'
 import animateIntroTitle from './introAnimation'
 
 animateParticles()
-window.onload = () => {
-  animateIntroTitle()
-  document.body.classList.remove('load')
-}
+document.addEventListener('DOMContentLoaded', function () {
+  requestIdleCallback(() => {
+    document.body.classList.remove('load')
+    animateIntroTitle()
+  })
+})
