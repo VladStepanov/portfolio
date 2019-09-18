@@ -2,8 +2,8 @@ import animateParticles from './particles'
 import './svg-sprites'
 import animateIntroTitle from './introAnimation'
 
+animateParticles()
 window.onload = () => {
-  console.log('onload')
   animateIntroTitle()
-  animateParticles()
+  document.body.classList.remove('load')
 }

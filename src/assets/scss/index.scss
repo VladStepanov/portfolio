@@ -53,6 +53,13 @@ section {
 .overflow {
   overflow: hidden;
 }
+body {
+  transition: filter .3s ease;
+  background-color: $dark;
+  &.load {
+    filter: blur(20px);
+  }
+}
 
 @import './components/intro';
 @import './components/about';

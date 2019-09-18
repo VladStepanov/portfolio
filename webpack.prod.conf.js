@@ -7,9 +7,9 @@ const ASSET_PATH = process.env.ASSET_PATH || '/';
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
-  // output: {
-    // publicPath: '/portfolio'
-  // }
+  output: {
+    publicPath: '/portfolio'
+  }
   // module: {
   //   rules: [
   //     {

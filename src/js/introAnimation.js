@@ -6,6 +6,6 @@ export default () => {
 
   const tl = new TimelineLite()
   tl
-    .fromTo(title, 1.5, { y: "-100%" }, { y: "0%", ease: "Power4.easeOut" })
-    .fromTo(subtitle, 1.5, { x: "-100%" }, { x: "0%", ease: "Power4.easeOut" }, '-=1.5')
+    .fromTo(title, 1.5, { y: "-110%" }, { y: "0%", ease: "Power4.easeOut" }, '+=0.5')
+    .fromTo(subtitle, 1.5, { x: "-100%" }, { x: "0%", ease: "Power4.easeOut" }, '-=1')
 }
