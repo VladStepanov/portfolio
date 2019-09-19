@@ -8,7 +8,7 @@
     margin: 0;
     padding: rem($gap*2) 0;
     background-color: $dark;
-    transition: background-color .3s ease;
+    transition: transform .3s ease;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -21,15 +21,21 @@
     }
     &:nth-child(-n+6) {
       transform: rotateX(-20deg);
+      &:hover {
+        transform: rotateX(-20deg) scale(1.1);
+      }
+    }
+    &:nth-child(n+7) {
+      transform: rotateX(20deg);
+      &:hover {
+        transform: rotateX(20deg) scale(1.1);
+      }
     }
     &-title {
       text-align: center;
       margin-bottom: $gap;
       font-size: $small-font;
       font-weight: bold;
-    }
-    &:hover {
-      // background-color: #fff;
     }
   }
 }
