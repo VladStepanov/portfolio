@@ -3,6 +3,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin')
+const WebpackBar = require('webpackbar')
 
 const PATHS = {
   src: path.join(__dirname, './src'),
@@ -105,6 +106,7 @@ module.exports = {
         collapseWhitespace: process.env.mode
       }
     }),
-    new SpriteLoaderPlugin()
+    new SpriteLoaderPlugin(),
+    new WebpackBar()
   ]
 }

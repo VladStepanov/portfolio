@@ -5,6 +5,7 @@ const baseWebpackConfig = require('./webpack.base.conf')
 module.exports = merge(baseWebpackConfig, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
+  stats: 'errors-warnings',
   devServer: {
     contentBase: baseWebpackConfig.externals.paths.dist,
     overlay: true,
