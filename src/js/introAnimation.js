@@ -1,4 +1,4 @@
-import { TimelineLite } from 'gsap/TweenMax'
+import { TimelineLite } from 'gsap/TimelineLite'
 
 export default () => {
   const title = document.querySelector('.intro__title')

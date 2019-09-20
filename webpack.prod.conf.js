@@ -1,9 +1,7 @@
 const UglifyjsPlugin = require('uglifyjs-webpack-plugin')
 const merge = require('webpack-merge')
 const baseWebpackConfig = require('./webpack.base.conf')
-
-const ASSET_PATH = process.env.ASSET_PATH || '/';
-
+const WebpackPluginAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
@@ -15,24 +13,7 @@ module.exports = merge(baseWebpackConfig, {
       new UglifyjsPlugin()
     ]
   },
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /\.svg$/,
-  //       use: [
-  //         { loader: 'file-loader'},
-  //         {
-  //           loader: 'svgo-loader'
-  //         }
-  //       ]
-  //     }
-  //   ]
-  // },
-  // plugins: [
-  //   new ImageminPlugin({ test: /\.(jpe?g|png|gif)$/i }),    
-  // ]
+  plugins: [
+    new WebpackPluginAnalyzer()
+  ]
 })
-
-// module.exports = new Promise(resolve => {
-//   resolve(prodWebpackConfig)
-// })
