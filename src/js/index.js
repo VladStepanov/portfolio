@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new IntersectedAnimation()
       .add('.title__wrap', node => {
-        tl.fromTo(node, 1, { y: "-100%", opacity: "0" }, { y: "0%", opacity: "1" })
+        tl.fromTo(node, 0.5, { y: "-100%", opacity: "0" }, { y: "0%", opacity: "1" })
       })
       .add('.about__desc', node => {
         tl.fromTo(node, 1, { x: "-110%" }, { x: "0%", ease: Power4.easeOut })

@@ -14,6 +14,7 @@ export default class IntersectAnimation {
     this.intersectionObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          console.log(entry, entry.target)
           const intersectedItem = this.items.find(item => item.node === entry.target)
           intersectedItem.animation.call(null, intersectedItem.node)
 
