@@ -4,3 +4,19 @@
   ::-moz-placeholder { @content };
   :-ms-input-placeholder { @content };
 }
+@mixin desktop {
+  @media (min-width: $xl) { @content }
+};
+@mixin tablet {
+  @media (min-width: $sm) and (max-width: $lg) { @content }
+};
+@mixin phone {
+  @media screen and (max-width: $sm) { @content }
+};
+
+@mixin tablet-desktop {
+  @media (min-width: $sm) { @content }
+};
+@mixin phone-tablet {
+  @media (max-width: $lg) { @content }
+}
