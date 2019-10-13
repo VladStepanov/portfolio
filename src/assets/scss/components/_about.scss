@@ -23,13 +23,13 @@
     float: left;
     margin-right: $gap;
     margin-bottom: $gap;
+    object-fit: cover;
+    border-radius: 50%;
     @include phone {
       width: rem(200px);
       height: rem(200px);
       float: none;
       margin-right: 0;
     }
-    object-fit: cover;
-    border-radius: 50%;
   }
 }

@@ -24,5 +24,6 @@ export default class IntersectAnimation {
     this.items.forEach(item => {
       this.intersectionObserver.observe(item.node)
     })
+    return this
   }
 }
