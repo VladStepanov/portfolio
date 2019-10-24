@@ -1,0 +1,42 @@
+.github {
+  &__repos {
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+      width: calc(50% - #{rem($gap)});
+      margin: 0;
+      padding: $gap;
+      border: 1px solid darken(#fff, 50%);
+      border-radius: 3px;
+      margin-top: $gap;
+      &:not(:last-child) {
+        margin-right: $gap;
+      }
+    }
+    &__title {
+      font-size: $medium-font;
+      a {
+        color: whitesmoke;
+        text-decoration: none;
+        display: block;
+      }
+    }
+  }
+  &__language {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 5px;
+    border-radius: 50%;
+    &--blue {
+      background-color: blue;
+    }
+    &--dark {
+      background-color: white;
+    }
+    &--yellow {
+      background-color: yellow;
+    }
+  }
+}

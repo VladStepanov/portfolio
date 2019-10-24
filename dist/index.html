@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap" rel="stylesheet">
   <title>Portfolio</title>
-<link href="/portfolio/assets/css/app.cf9a37ac9126d7ae2f35.css" rel="stylesheet"></head>
+<link href="/assets/css/app.a797027d136e7dfe2210.css" rel="stylesheet"></head>
 
 <body class="load">
   <section class="intro__section no-pad" id="intro__section">
@@ -121,6 +121,26 @@
       </div>
     </div>
   </section>
-<script type="text/javascript" src="/portfolio/assets/js/vendors.cf9a37ac9126d7ae2f35.js"></script><script type="text/javascript" src="/portfolio/assets/js/app.cf9a37ac9126d7ae2f35.js"></script></body>
+
+  <section>
+    <div class="container">
+      <div class="title__wrap">
+        <h2 class="title">My Portfolio</h2>
+      </div>
+      <p>My github account</p>
+      <main class="github__repos">
+        <script id="github__repo" type="text/x-handlebars-template">
+          <figure class='github__repos__item'>
+            <figcaption class='github__repos__title'>
+              <a href="{{ link }}">{{ title }}</a>
+            </figcaption>
+            <p class='github__repos__desc'>{{ desc }}</p>
+            <p><span class='github__language github__language--{{ langColor }}'></span> {{ lang }}</p>
+          </figure>
+        </script>
+      </main>
+    </div>
+  </section>
+<script type="text/javascript" src="/assets/js/vendors.a797027d136e7dfe2210.js"></script><script type="text/javascript" src="/assets/js/app.a797027d136e7dfe2210.js"></script></body>
 
 </html>

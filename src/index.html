@@ -121,6 +121,26 @@
       </div>
     </div>
   </section>
+
+  <section>
+    <div class="container">
+      <div class="title__wrap">
+        <h2 class="title">My Portfolio</h2>
+      </div>
+      <p>My github account</p>
+      <main class='github__repos'>
+        <script id='github__repo' type='text/x-handlebars-template'>
+          <figure class='github__repos__item'>
+            <figcaption class='github__repos__title'>
+              <a href="{{ link }}">{{ title }}</a>
+            </figcaption>
+            <p class='github__repos__desc'>{{ desc }}</p>
+            <p><span class='github__language github__language--{{ langColor }}'></span> {{ lang }}</p>
+          </figure>
+        </script>
+      </main>
+    </div>
+  </section>
 </body>
 
 </html>
