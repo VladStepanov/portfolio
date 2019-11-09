@@ -49,6 +49,7 @@
     "normalize.css": "^8.0.1",
     "normalize.scss": "^0.1.0",
     "particles.js": "^2.0.0",
-    "sass-rem": "^2.0.1"
+    "sass-rem": "^2.0.1",
+    "wow.js": "^1.2.2"
   }
 }
