@@ -1,6 +1,7 @@
 import animateParticles from './particles'
 import './svg-sprites'
 import './github'
+import './skills'
 import wow from './wow'
 
 animateParticles()
