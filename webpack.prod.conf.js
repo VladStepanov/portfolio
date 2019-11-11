@@ -5,9 +5,9 @@ const WebpackPluginAnalyzer = require('webpack-bundle-analyzer').BundleAnalyzerP
 
 module.exports = merge(baseWebpackConfig, {
   mode: 'production',
-  // output: {
-  //   publicPath: '/portfolio'
-  // },
+  output: {
+    publicPath: '/portfolio'
+  },
   // optimization: {
   //   minimizer: [
   //     new UglifyjsPlugin()
