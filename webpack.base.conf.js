@@ -96,7 +96,8 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/assets/img/`, to: `${PATHS.assets}/img` },
-      { from: `${PATHS.src}/static/`, to: `${PATHS.dist}` }
+      { from: `${PATHS.src}/static/`, to: `${PATHS.dist}` },
+      { from: `${PATHS.src}/assets/svg`, to: `${PATHS.assets}/svg` }
     ]),
     new HtmlWebpackPlugin({
       hash: false,
