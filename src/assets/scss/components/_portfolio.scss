@@ -29,15 +29,16 @@
     vertical-align: text-top;
     margin-right: 5px;
     border-radius: 50%;
+    background-color: #fff;
     &--blue {
       background-color: blue;
-    }
+    };
     &--dark {
-      background-color: white;
-    }
+      background-color: #fff;
+    };
     &--yellow {
       background-color: yellow;
-    }
+    };
   }
 }
 .github__language--dark {
