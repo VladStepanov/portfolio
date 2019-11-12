@@ -3,6 +3,7 @@ import './svg-sprites'
 import './github'
 import './skills'
 import './contact'
+import './social'
 import wow from './wow'
 
 animateParticles()

@@ -1,0 +1,19 @@
+footer {
+  padding: $gap;
+}
+
+.social {
+  max-width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  &__item {
+    &:not(:last-child) {
+      margin-right: $gap;
+    }
+    svg {
+      height: $gap*1.5;
+      width: $gap*1.5;
+    }
+  }
+}
