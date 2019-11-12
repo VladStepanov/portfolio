@@ -1,0 +1,43 @@
+.contact {
+  width: 60%;
+  @include phone {
+    width: 100%;
+    align-items: stretch;
+  }
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  & > *:not(:last-child) {
+    margin-bottom: $gap;
+  }
+  &__input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: $gap;
+    @include accesibility;
+    &::placeholder {
+      color: #fff
+    }
+  }
+  &__area {
+    padding: $gap;
+    resize: none;
+    height: auto;
+    overflow-y: hidden;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid #fff;
+    @include accesibility;
+    &::placeholder {
+      color: #fff;
+    }
+  }
+  &__button {
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: $gap $gap*2;
+    align-self: center;
+    @include accesibility;
+  }
+}

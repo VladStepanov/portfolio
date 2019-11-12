@@ -19,4 +19,13 @@
 };
 @mixin phone-tablet {
   @media (max-width: $lg) { @content }
+};
+
+@mixin accesibility {
+  &:focus {
+    outline: none;
+    border-color: $accent;
+    transition: box-shadow .2s ease, border-color .2s ease;
+    box-shadow: 0 0 20px rgba($accent, .5);
+  }
 }
